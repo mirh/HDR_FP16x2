@@ -64,6 +64,7 @@
 #include <dsound.h>
 
 #define STRSAFE_NO_DEPRECATE
+#include <tchar.h>
 #include <strsafe.h>
 
 #include <DXUT/DXUT.h>

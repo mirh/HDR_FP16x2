@@ -597,10 +597,6 @@ HRESULT WINAPI DXUTTrace( const CHAR* strFile, DWORD dwLine, HRESULT hr, const W
 
 
 //--------------------------------------------------------------------------------------
-// Helper function to launch sample's readme 
-void DXUTLaunchReadme( HWND hWnd, LPCWSTR strLoc = NULL );
-
-//--------------------------------------------------------------------------------------
 // Direct3D9 dynamic linking support -- calls top-level D3D9 APIs with graceful
 // failure if APIs are not present.
 //--------------------------------------------------------------------------------------

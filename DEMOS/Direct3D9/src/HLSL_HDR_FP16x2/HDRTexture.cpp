@@ -242,7 +242,7 @@ void HDRTexture::FillFullCubemap(){
 
 		if(!AUTOMIPMAP_FLAG){
 			// Generate the mipmap levels for the face (This could be optimized!)
-			for(j = 1; j < m_pCubeMapF->GetLevelCount(); j++){
+			for(int j = 1; j < m_pCubeMapF->GetLevelCount(); j++){
 				m_pCubeMapF->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j-1, &pMip1);
 				m_pCubeMapF->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j, &pMip2);
 
@@ -329,7 +329,7 @@ void HDRTexture::FillHalfCubemaps(){
 
 		if(!AUTOMIPMAP_FLAG){
 			// Generate the mipmap levels for the face in channel A (This could be optimized!)
-			for(j = 1; j < m_pCubeMapA->GetLevelCount(); j++){
+			for(int j = 1; j < m_pCubeMapA->GetLevelCount(); j++){
 				m_pCubeMapA->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j-1, &pMip1);
 				m_pCubeMapA->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j, &pMip2);
 
@@ -340,7 +340,7 @@ void HDRTexture::FillHalfCubemaps(){
 			}
 
 			// Generate the mipmap levels for the face in channel B (This could be optimized!)
-			for(j = 1; j < m_pCubeMapB->GetLevelCount(); j++){
+			for(int j = 1; j < m_pCubeMapB->GetLevelCount(); j++){
 				m_pCubeMapB->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j-1, &pMip1);
 				m_pCubeMapB->GetCubeMapSurface((D3DCUBEMAP_FACES)faceID, j, &pMip2);
 
