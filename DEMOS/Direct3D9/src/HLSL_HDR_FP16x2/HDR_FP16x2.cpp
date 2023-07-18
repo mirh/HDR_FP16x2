@@ -322,7 +322,7 @@ void RenderText()
 	
 	if( g_bShowUI )
 	{
-		txtHelper.DrawTextLine( DXUTGetFrameStats() );
+		txtHelper.DrawTextLine( DXUTGetFrameStats(true) );
 		txtHelper.DrawTextLine( DXUTGetDeviceStats() );
 		
 		if( !g_bShowHelp )
